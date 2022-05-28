@@ -1,0 +1,62 @@
+#homepage{
+    text-align: center;
+}
+#homepage h1{
+    margin: 0;
+    padding: 3% 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: #3084DA;
+}
+#homepage span{
+    color: #bfe2f0;
+    font-family: cursive;
+}
+#homepage .name{
+    font-size: 4em;
+    color: #3084DA;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#homepage .desc{
+    color: #3084DA;
+}
+#homepage img{
+    width: 150px;
+    border-radius:50% ;
+}
+@media screen and (max-width: 820px) {
+    #homepage h1{
+        font-size: 1.4em;
+    }
+    #homepage .name{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:540px){
+    #homepage h1{
+        font-size: 1em;
+    }
+    #homepage img{
+        width: 100px;
+    }
+    #homepage .name{
+        font-size: 2em;
+    }
+    #homepage .desc{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 468px) {
+    #homepage h1{
+        font-size: 0.8em;
+    }
+    #homepage img{
+        width: 70px;
+    }
+    #homepage .name{
+        font-size: 1em;
+    }
+    #homepage .desc{
+        font-size: 0.6em;
+    }
+}
