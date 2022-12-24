@@ -1,0 +1,42 @@
+:root{
+    --tabbar-bg: #004052;
+    --tabbar-color: #E2C085;
+    --tabbar-select: #002B37;
+    --tabbar-close: #1C3B43;
+}
+.tabbar{
+    background-color: var(--tabbar-bg);
+    color: var(--tabbar-color);
+}
+.tab-list{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    height: 100%;
+}
+.tab-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid var(--tabbar-select);
+    cursor: pointer;
+}
+.tab-list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 100%;
+}
+.tab-active{
+    background-color: var(--tabbar-select);
+}
+.tab-close{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.tab-close:hover{
+    background-color: var(--tabbar-close);
+}

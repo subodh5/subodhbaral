@@ -1,0 +1,11 @@
+:root{
+    --connect-color:#8fabb6;
+}
+.connectpage a{
+    display: block;
+    width: 10%;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 1.4em;
+    color: var(--connect-color);
+}

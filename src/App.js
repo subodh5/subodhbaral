@@ -1,32 +1,28 @@
-import { Routes, Route } from "react-router-dom"
+import "./styles/App.css"
 import Menubar from "./components/Menubar";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import FileExplorer from "./components/FileExplorer";
 import Tabbar from "./components/Tabbar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Connect from "./components/connect/Connect";
-import "./App.css"
+import Textarea from "./components/Textarea"
+import Footer from "./components/Footer"
+import ThemeProvider from "./ThemeProvider";
+import { useState } from "react";
+
 
 function App() {
+
+  const [themeColor, setThemeColor]= useState("blue")
+  
   return (
-    <div>
-      <Menubar/>
-
-      <div className="clientarea">
-        <Navbar/>
-        <div className="mainbody">
-          <Tabbar/>
-          <Routes>
-            <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/subodhbaral" element={<Home/>}/>
-            <Route exact path="/about" element={<About/>}/>
-            <Route exact path="/connect" element={<Connect/>}/>
-          </Routes>
-        </div>
-      </div>
-
-      <Footer/>
+    <div className="App">
+      <ThemeProvider theme={themeColor}>
+        <Menubar changeTheme={setThemeColor}/>
+        <Sidebar/>
+        <FileExplorer/>
+        <Tabbar/>
+        <Textarea/>
+        <Footer/>
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4% 12% auto;
+    grid-template-rows: 5vh 36px auto 4vh;
+}
+.menubar{
+    grid-column:span 3;
+}
+.sidebar{
+    grid-row:2/ span 2 ;
+}
+.file-explorer{
+    grid-row: 2 / span 2;
+}
+.footer{
+    grid-column: span 3;
+}

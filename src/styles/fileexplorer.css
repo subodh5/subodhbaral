@@ -1,0 +1,37 @@
+:root{
+    --file-bg:#00212B;
+    --file-color:#ccc;
+    --file-hover:#003440;
+    --file-select:#003440;
+}
+.file-explorer{
+    background-color: var(--file-bg);
+    color: var(--file-color);
+    padding: 5px;
+}
+.explorer-list {
+    list-style: none;
+    margin: 0 5px;
+}
+.explorer-list> li:hover{
+    cursor: pointer;
+    background-color: var(--file-hover);
+}
+.src-list li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin: 0 0 0 10px;
+    padding: 2px;
+}
+.src-list li:hover{
+    cursor: pointer;
+    background-color: var(--file-hover);
+}
+
+.list-select{
+    background-color: var(--file-select);
+}
+.src-list a{
+    display: inline-block;
+    width: 100%;
+}

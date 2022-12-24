@@ -1,0 +1,11 @@
+:root{
+    --footer-bg: #00212B;
+    --footer-color: #8A999A;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+}

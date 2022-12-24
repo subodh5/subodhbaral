@@ -1,0 +1,19 @@
+:root{
+    --about-keycolor:#7dd373;
+    --about-valuecolor:#bfe2f0;
+}
+.aboutpage{
+    color: var(--about-valuecolor);
+    line-height: 24px;
+}
+.about-p{
+    margin: 0;
+    padding-top: 10px;
+    padding-left:20px ;
+}
+.style-line{
+    padding-left: 5%;
+}
+.aboutpage .key{
+    color: var(--about-keycolor);
+}

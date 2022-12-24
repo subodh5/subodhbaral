@@ -1,0 +1,6 @@
+:root{
+    --textarea-bg: #002B36;
+}
+.textarea{
+    background-color: var(--textarea-bg);
+}

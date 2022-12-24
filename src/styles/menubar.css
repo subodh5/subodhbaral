@@ -1,0 +1,68 @@
+:root{
+    --menubar-bg: #0E2931;
+    --menubar-color: #d6d6d6;
+    --menubar-hover: #26393F;
+    --menubar-winhover: #224853;
+}
+.menubar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: var(--menubar-bg);
+    color: var(--menubar-color);
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu-list img{
+    height: 16px;
+}
+.menu-list li{
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: default;
+}
+.menu-list li:hover{
+    background-color: var(--menubar-hover);
+}
+.window-option{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+}
+.theme-color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.theme-color.light{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3px 1px #cccccc;
+}
+.theme-color.blue{
+    background-color: #007899;
+    box-shadow: 0 0 3px 1px #00a0cc;
+}
+.theme-color.dark{
+    background-color: #050505;
+    box-shadow: 0 0 3px 1px #383838;
+}
+.window-option li{
+    margin: 4px 10px;
+    color: var(--menubar-color);
+}
+.window-option .minimize, .window-option .maximize, .window-option .close{
+    margin: 0;
+    padding: 4px 10px;
+}
+.minimize:hover, .maximize:hover{
+    background-color: var(--menubar-winhover);
+}
+.close:hover{
+    background-color: #E81123;
+}

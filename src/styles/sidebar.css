@@ -1,0 +1,45 @@
+:root{
+    --sidebar-bg:  #003847;
+    --sidebar-namebg:#003847;
+    --sidebar-color: #668891;
+    --sidebar-hover: #FFFFFF;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-color);
+}
+.icon-list{
+    list-style: none;
+    font-size: 2vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-list li{
+    margin: 10px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.icon-list li:hover{
+    color: var(--sidebar-hover);
+}
+
+.icon-name{
+    font-size: 0.8rem;
+    background-color: var(--sidebar-namebg);
+    color: var(--sidebar-color);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 3px;
+    position: absolute;
+    left: 3vw;
+    z-index: 9;
+    display: none;
+    width: max-content;
+}
+.icon-list li:hover .icon-name{
+    display: inline-block;
+}
