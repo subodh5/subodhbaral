@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/subodhbaral/static/css/main.ba70aac4.css",
-    "main.js": "/subodhbaral/static/js/main.b992fef0.js",
+    "main.css": "/subodhbaral/static/css/main.e32a56a4.css",
+    "main.js": "/subodhbaral/static/js/main.5cae6fc0.js",
     "static/media/photo.png": "/subodhbaral/static/media/photo.99f0c031fd09d3d2fe89.png",
     "static/media/vscode.png": "/subodhbaral/static/media/vscode.1718d33968068d5e852d.png",
     "index.html": "/subodhbaral/index.html",
-    "main.ba70aac4.css.map": "/subodhbaral/static/css/main.ba70aac4.css.map",
-    "main.b992fef0.js.map": "/subodhbaral/static/js/main.b992fef0.js.map"
+    "main.e32a56a4.css.map": "/subodhbaral/static/css/main.e32a56a4.css.map",
+    "main.5cae6fc0.js.map": "/subodhbaral/static/js/main.5cae6fc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba70aac4.css",
-    "static/js/main.b992fef0.js"
+    "static/css/main.e32a56a4.css",
+    "static/js/main.5cae6fc0.js"
   ]
 }
