@@ -1,6 +1,7 @@
 import vsLogo from '../images/vscode.png'
 import '../styles/menubar.css'
 import {VscChromeMinimize,VscChromeRestore,VscChromeClose} from "react-icons/vsc";
+import {FiMenu} from "react-icons/fi";
 import { useTheme } from "../ThemeProvider";
 export default function Menubar({changeTheme}){
 
@@ -27,6 +28,7 @@ export default function Menubar({changeTheme}){
     
     return(
         <div className="menubar">
+            <FiMenu className='menu-icon'/>
             <ul className="menu-list">
                 <li><img src={vsLogo} alt="vsCode" /></li>
                 <li>File</li>
@@ -39,7 +41,7 @@ export default function Menubar({changeTheme}){
                 <li>Help</li>
             </ul>
             <ul className="window-option">
-                <li style={{fontSize:"16px", margin:"4px"}}>Color Theme:</li>
+                <li className='choose-theme'>Color Theme:</li>
                 <li className='theme-color light' onClick={()=>changeTheme("white")}></li>
                 <li className='theme-color blue' onClick={()=>changeTheme("blue")}></li>
                 <li className='theme-color dark' onClick={()=>changeTheme("dark")}></li>

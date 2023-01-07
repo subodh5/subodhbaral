@@ -17,7 +17,7 @@
     font-family: cursive;
 }
 .homepage .name{
-    font-size: 4em;
+    font-size: 32px;
     color: var(--home-tagcolor);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

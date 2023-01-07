@@ -16,7 +16,7 @@ a{
     height: 100vh;
     display: grid;
     grid-template-columns: 4% 12% auto;
-    grid-template-rows: 5vh 36px auto 4vh;
+    grid-template-rows: 32px 36px auto 24px;
 }
 .menubar{
     grid-column:span 3;
@@ -30,3 +30,39 @@ a{
 .footer{
     grid-column: span 3;
 }
+
+@media screen and (max-width: 820px) {
+    .App{
+
+        grid-template-columns: 4% 20% auto;
+        grid-template-rows: 32px 36px auto 24px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+  .App{
+    grid-template-columns: 5% auto;
+    grid-template-rows: 20px max-content 24px auto 24px;
+  }
+
+.menubar{
+    grid-column:span 2;
+}
+.sidebar{
+    grid-row:2/ span 3 ;
+}
+.file-explorer{
+    grid-row: 2;
+}
+.tabbar{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.footer{
+    grid-column: span 2;
+}
+
+}
+
+

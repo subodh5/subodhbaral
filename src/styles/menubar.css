@@ -11,6 +11,11 @@
     font-size: 14px;
     background-color: var(--menubar-bg);
     color: var(--menubar-color);
+    position: relative;
+}
+.menu-icon{
+    display: none;
+    position: absolute;
 }
 .menu-list{
     display: flex;
@@ -33,6 +38,7 @@
     display: flex;
     list-style: none;
     font-size: 18px;
+    align-items: center;
 }
 .theme-color{
     width: 20px;
@@ -65,4 +71,42 @@
 }
 .close:hover{
     background-color: #E81123;
+}
+.choose-theme{
+    font-size: 16px;
+    margin: 4px;
+}
+
+@media screen and (max-width: 468px) {
+    .menubar{
+        font-size: 10px;
+    }
+   .menu-list, .window-option{
+    display: none;
+   }
+   .menu-icon{
+    display: inline-block;
+    left: 5vw;
+    }
+    .menubar:hover{
+        height: max-content;
+        z-index: 99;
+    }
+    .menubar:hover .menu-icon{
+        display: none;
+    }
+    .menubar:hover .menu-list{
+        display: inline-block;
+    }
+    .menubar:hover .window-option{
+        display: flex;
+        flex-direction: row;
+    }
+    .menubar:hover .choose-theme{
+        font-size: 12px;
+        margin: 0;
+    }
+    .menubar:hover .close, .maximize, .minimize{
+        display: none;
+    }
 }

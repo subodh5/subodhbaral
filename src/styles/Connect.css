@@ -9,3 +9,8 @@
     font-size: 1.4em;
     color: var(--connect-color);
 }
+@media screen and (max-width: 468px) {
+    .connectpage a{
+        font-size: 12px;
+    }
+}

@@ -17,3 +17,9 @@
 .aboutpage .key{
     color: var(--about-keycolor);
 }
+
+@media screen and (max-width: 468px) {
+    .aboutpage{
+        font-size: 12px;
+    }
+}

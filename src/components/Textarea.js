@@ -24,6 +24,7 @@ export default function Textarea(){
         <main className="textarea">
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
+                <Route exact path="/subodhbaral" element={<Home/>}/>
                 <Route exact path="/Home.html" element={<Home/>}/>
                 <Route exact path="/About.css" element={<About/>}/>
                 <Route exact path="/Connect.js" element={<Connect/>}/>

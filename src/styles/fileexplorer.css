@@ -35,3 +35,12 @@
     display: inline-block;
     width: 100%;
 }
+
+@media screen and (max-width: 468px) {
+    .file-explorer{
+        font-size: 12px;
+    }
+   .src-list li{
+    font-size: 10px;
+   }
+}
